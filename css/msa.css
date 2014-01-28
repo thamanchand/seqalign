@@ -1,0 +1,71 @@
+<style type="text/css">
+    .formLayout
+    {
+        background-color: #f3f3f3;
+        border: solid 1px #a1a1a1;
+        padding: 10px;
+        width: 600px;
+		float:: center;
+		align
+    }
+
+    .formLayout label, .formLayout input
+    {
+        display: table-caption block;
+        width: 150px;
+        float: left;
+        margin-bottom: 10px;
+    }
+
+
+
+    .formLayout label
+    {
+        text-align: right;
+        padding-right: 20px;
+    }
+ .button
+    {
+        text-align: right;
+        padding-right: 120px;
+    }
+    br
+    {
+        clear: left;
+    }
+.btn {
+
+	  background-color: #CCCCCC;
+	  font: bold 84%'trebuchet ms',helvetica,sans-serif;
+	background-color: #CCCCCC;
+	width:10px;
+	padding-right: 15px;
+	    }
+.texta {
+ font-size: 10px;
+ background-color: #CCCCCC;
+ border: 1px solid #666666;
+}
+.texta1 {
+ font-size: 12px;
+ 
+ border: 1px solid #666666;
+ color: #330066;
+ 
+ padding-left: 15px;
+  padding-right: 15px;
+ font: helvetica,sans-serif;
+}
+	.style1 {
+	font-size: 14px;
+	color: #000000;
+}
+
+.link 
+{
+ font-size: 15px;
+ font-style:normal;
+padding-right: 210px;
+}
+.style2 {border: 1px solid #666666; background-color: #CCCCCC;}
+    </style>

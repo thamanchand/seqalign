@@ -1,0 +1,171 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Configuration &mdash; Seq-alignment v1 June 2010 documentation</title>
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '1 June 2010',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Seq-alignment v1 June 2010 documentation" href="index.html" />
+    <link rel="next" title="Application workflow" href="appliwork.html" />
+    <link rel="prev" title="Requirements" href="system_requirement.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="appliwork.html" title="Application workflow"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="system_requirement.html" title="Requirements"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">Seq-alignment v1 June 2010 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <img alt="_images/header1.png" src="_images/header1.png" />
+<div class="section" id="configuration">
+<h1>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h1>
+<p>Basic steps in configuration involves in following categories</p>
+<div class="section" id="environment-variables">
+<h2>Environment variables<a class="headerlink" href="#environment-variables" title="Permalink to this headline">¶</a></h2>
+<p>As to run the main application different applications are associated with it. So, every applications
+path should be defined in the system environment</p>
+<div class="section" id="including-system-variables-in-the-windows">
+<h3>Including system variables in the windows<a class="headerlink" href="#including-system-variables-in-the-windows" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>Path name:- PATH</li>
+<li>Variable value:- C:Python26Scripts;C:Python26;C:Program FilesClustalW2</li>
+</ol>
+<img alt="_images/path.jpg" src="_images/path.jpg" />
+</div>
+</div>
+<div class="section" id="apache-setting">
+<h2>Apache setting<a class="headerlink" href="#apache-setting" title="Permalink to this headline">¶</a></h2>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Make sure that your Apache server is running if you want to run the application with localhost.</p>
+</div>
+<div class="section" id="including-cgi-mode-in-the-apache-server">
+<h3>Including CGI mode in the apache server<a class="headerlink" href="#including-cgi-mode-in-the-apache-server" title="Permalink to this headline">¶</a></h3>
+<p><strong>httpd.conf</strong></p>
+<p>Apache httpd.conf contains all the configurations for the Apache server, so to run our application
+we need to add some lines of codes in httpd.conf file. Addition of lines of codes are given below in
+a precise way. Please dont forget to add this lines so python CGI mode will be active.</p>
+<ol class="arabic">
+<li><p class="first">Options Indexes FollowSymLinks (default)</p>
+<p>1.1. Options Indexes FollowSymLinks ExecCGI (After adding)</p>
+</li>
+</ol>
+<p>We are using python script on the web server so we need to add handler so apache server can</p>
+<p>process python script (.py) in the browser</p>
+<ol class="arabic" start="2">
+<li><p class="first">AddHandler cgi-script .cgi (default)</p>
+<p>2.1. AddHandler cgi-script .cgi .py(after adding handler)</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Configuration</a><ul>
+<li><a class="reference internal" href="#environment-variables">Environment variables</a><ul>
+<li><a class="reference internal" href="#including-system-variables-in-the-windows">Including system variables in the windows</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#apache-setting">Apache setting</a><ul>
+<li><a class="reference internal" href="#including-cgi-mode-in-the-apache-server">Including CGI mode in the apache server</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="system_requirement.html"
+                        title="previous chapter">Requirements</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="appliwork.html"
+                        title="next chapter">Application workflow</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/configuration.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="appliwork.html" title="Application workflow"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="system_requirement.html" title="Requirements"
+             >previous</a> |</li>
+        <li><a href="index.html">Seq-alignment v1 June 2010 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2010, Thaman Chand.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0b2+.
+    </div>
+  </body>
+</html>
